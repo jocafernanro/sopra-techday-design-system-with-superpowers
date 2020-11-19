@@ -1,4 +1,4 @@
-# sopra-techday-design-system-with-superpowers-demo
+# Sopra Tech Day - Design System with Superpowers
 
 ## Project setup
 ```
