@@ -7,6 +7,8 @@
 
 <script>
 import { TYPE } from "@/constants";
+
+// MOLECULES
 import NewsletterTitles from "../molecules/NewsletterTitles";
 import NewsletterForm from "../molecules/NewsletterForm";
 
@@ -17,10 +19,12 @@ export default {
       default: "default",
     },
   },
+
   components: {
     NewsletterTitles,
     NewsletterForm,
   },
+
   computed: {
     titleType() {
       let titleType = TYPE.SECONDARY;
