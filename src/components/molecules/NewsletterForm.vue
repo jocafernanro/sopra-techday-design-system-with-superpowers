@@ -1,7 +1,7 @@
 <template>
-  <form @submit.prevent class="grid grid-cols-6">
-    <Input class="col-span-4" />
-    <Button class="col-span-2" :type="buttonType" :text="'Notify me'" />
+  <form @submit.prevent class="grid grid-cols-6 my-3">
+    <Input class="col-span-4 self-start" />
+    <Button class="col-span-2 " :type="buttonType" :text="'Notify me'" />
     <Paragraph class="col-span-6" :type="paragraphType"
       >We care about the protection of your data. Read our
       <a class="underline">Privacy Policy</a></Paragraph

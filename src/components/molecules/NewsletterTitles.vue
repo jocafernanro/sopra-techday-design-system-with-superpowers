@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between">
+  <div class="flex flex-col justify-between my-3">
     <Title :level="TITLE.H3" :type="titleType">
       Want products news and updates?</Title
     >

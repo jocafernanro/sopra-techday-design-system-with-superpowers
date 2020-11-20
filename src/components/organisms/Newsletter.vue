@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
 .newsletter {
-  @apply flex flex-row items-center justify-between px-14 py-10 rounded-lg;
+  @apply flex flex-col lg:flex-row lg:items-center justify-between px-14 py-10 rounded-lg;
 }
 
 .primary {

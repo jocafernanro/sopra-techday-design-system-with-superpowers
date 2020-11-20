@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .button {
   font-family: "Manrope";
-  @apply text-lg font-semibold  px-8 py-2  rounded-lg;
+  @apply text-lg lg:text-sm font-semibold  px-8 py-2  rounded-lg;
 }
 
 .primary {

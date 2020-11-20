@@ -1,26 +1,17 @@
 <template>
   <div id="app" class="container mx-auto">
-    <main-header />
-    <newsletter :type="TYPE.PRIMARY" />
+    <home-page></home-page>
   </div>
 </template>
 
 <script>
-import { TYPE } from "@/constants";
-import MainHeader from "./components/organisms/MainHeader";
-import Newsletter from "./components/organisms/Newsletter";
+import HomePage from './components/pages/HomePage.vue';
 
 export default {
   name: "App",
   components: {
-    MainHeader,
-    Newsletter,
-  },
-  data() {
-    return {
-      TYPE,
-    };
-  },
+    HomePage
+  }
 };
 </script>
 
