@@ -1,5 +1,9 @@
 <template>
-  <li :class="[`${color}`]" class="link-item"><slot></slot></li>
+  <li :class="[`${color}`]" class="link-item hover:text-primary">
+    <a class="no-underline" href="#">
+      <slot></slot>
+    </a>
+  </li>
 </template>
 
 <script>
@@ -27,7 +31,7 @@ export default {
 <style scoped>
 .link-item {
   font-family: "Manrope";
-  @apply text-xl font-semibold mr-6;
+  @apply text-lg font-semibold mr-6;
 }
 
 .default {

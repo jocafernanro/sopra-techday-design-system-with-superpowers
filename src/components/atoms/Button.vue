@@ -27,7 +27,15 @@ export default {
   @apply text-white bg-primary shadow-sm;
 }
 
+.primary:hover {
+  @apply bg-primary-lighter;
+}
+
 .secondary {
   @apply text-white bg-secondary shadow-sm;
+}
+
+.secondary:hover {
+  @apply bg-secondary-lighter;
 }
 </style>
