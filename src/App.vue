@@ -1,15 +1,18 @@
 <template>
-  <div id="app">
-    <h1 class="text-2xl">Hola tailwind</h1>
+  <div id="app" class="container mx-auto">
+    <MainHeader />
   </div>
 </template>
 
 <script>
+import MainHeader from "./components/organisms/MainHeader";
+
 export default {
   name: "App",
-  components: {},
+  components: {
+    MainHeader,
+  },
 };
 </script>
 
-<style>
-</style>
+<style></style>
