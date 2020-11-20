@@ -1,6 +1,10 @@
 <template>
   <form @submit.prevent class="grid grid-cols-6 my-3">
-    <Input class="col-span-4 self-start" />
+    <Input
+      placeholder="Indicate your email"
+      type="'email'"
+      class="col-span-4 self-start"
+    />
     <Button class="col-span-2 " :type="buttonType" :text="'Notify me'" />
     <Paragraph class="col-span-6" :type="paragraphType"
       >We care about the protection of your data. Read our
@@ -11,9 +15,12 @@
 
 <script>
 import { TYPE } from "@/constants";
+
+// ATOMS
 import Input from "../atoms/Input";
 import Button from "../atoms/Button";
 import Paragraph from "../atoms/Paragraph";
+
 export default {
   props: {
     type: {
@@ -21,16 +28,19 @@ export default {
       default: "primary",
     },
   },
+
   components: {
     Input,
     Button,
     Paragraph,
   },
+
   data() {
     return {
       TYPE,
     };
   },
+
   computed: {
     buttonType() {
       let buttonType;
@@ -45,10 +55,9 @@ export default {
           break;
       }
 
-      console.log(buttonType);
-
       return buttonType;
     },
+
     paragraphType() {
       let paragraphType = TYPE.SECONDARY;
       if ([TYPE.PRIMARY, TYPE.SECONDARY].includes(this.type))

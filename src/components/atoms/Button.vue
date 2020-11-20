@@ -1,5 +1,7 @@
 <template>
-  <button :class="[`${type}`]" class="button">{{ text }}</button>
+  <button :class="[`${type}`]" class="button">
+    {{ text }}
+  </button>
 </template>
 
 <script>
@@ -19,7 +21,6 @@ export default {
 
 <style scoped>
 .button {
-  font-family: "Manrope";
   @apply text-lg lg:text-sm font-semibold  px-8 py-2  rounded-lg;
 }
 

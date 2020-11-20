@@ -15,7 +15,6 @@ export default {
 
 <style scoped>
 .paragraph {
-  font-family: "Manrope";
   @apply text-sm py-2 pl-2;
 }
 

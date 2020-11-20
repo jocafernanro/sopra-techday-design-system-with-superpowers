@@ -11,7 +11,6 @@ export default {
       type: String,
       required: true,
       validator: function(value) {
-        console.log(value);
         return value.match("h[1-6]");
       },
     },
@@ -25,7 +24,6 @@ export default {
 
 <style scoped>
 .title {
-  font-family: "Manrope";
   @apply inline-block tracking-tight font-bold;
 }
 

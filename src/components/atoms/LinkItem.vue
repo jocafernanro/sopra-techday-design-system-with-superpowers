@@ -20,6 +20,7 @@ export default {
       default: false,
     },
   },
+
   computed: {
     color() {
       return this.selected ? TYPE.SELECTED : this.type;
@@ -30,7 +31,6 @@ export default {
 
 <style scoped>
 .link-item {
-  font-family: "Manrope";
   @apply text-lg font-semibold mr-6;
 }
 
